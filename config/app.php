@@ -1,7 +1,8 @@
 <?php
 // إعدادات AWS Cognito الخاصة بحساب المستخدم، المفتاح السري، والمنطقة
-define('AWS_ACCESS_KEY', 'AKIA5FCD576WYRIMGT4B');
-define('AWS_SECRET_KEY', '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');
+define('AWS_ACCESS_KEY', getenv('AWS_ECOMMERCE_ACCESS_KEY_ID'));
+define('AWS_SECRET_KEY', getenv('AWS_ECOMMERCE_SECRET_ACCESS_KEY'));
+
 define('AWS_REGION', 'eu-north-1'); // منطقة AWS الخاصة بالخدمات
 
 // إعدادات AWS Cognito الخاصة بمجمع المستخدمين وعميل التطبيق

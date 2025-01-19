@@ -54,7 +54,7 @@
       <div class="row">
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-aqua">
+          <div class="small-box bg-aqua" style="background:#003192 !important">
             <div class="inner">
               <?php
                 $stmt = $conn->prepare("SELECT sum(price*quantity) AS Total FROM details LEFT JOIN products ON products.id=details.product_id");
@@ -74,7 +74,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-green">
+          <div class="small-box bg-green" style="background:#003192 !important">
             <div class="inner">
               <?php
                 $stmt = $conn->prepare("SELECT *, COUNT(*) AS numrows FROM products");
@@ -95,7 +95,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-yellow">
+          <div class="small-box bg-yellow" style="background:#003192 !important">
             <div class="inner">
               <?php
                 $stmt = $conn->prepare("SELECT *, COUNT(*) AS numrows FROM users");
@@ -116,7 +116,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-red">
+          <div class="small-box bg-red" style="background:#003192 !important">
             <div class="inner">
               <?php
                 $stmt = $conn->prepare("SELECT * FROM details LEFT JOIN sales ON sales.id=details.sales_id LEFT JOIN products ON products.id=details.product_id WHERE sales_date=:sales_date");
